@@ -14,13 +14,14 @@ public class MeleeAttackManager : Character
     private bool meleeAttack;
     //The animator on the meleePrefab
     private Animator meleeAnimator;
+
+    /*
     //The Animator component on the player
-    //private Animator anim;
+    private Animator anim;
     //The Character script on the player; this script on my project manages the grounded state, so if you have a different script for that reference that script
-    //private Character character;
+    private Character character;
 
-
-    /* Run this method instead of Initialization if you don't have any scripts inheriting from each other
+    //Run this method instead of Initialization if you don't have any scripts inheriting from each other
     private void Start()
     {
         //The Animator component on the player
@@ -31,7 +32,6 @@ public class MeleeAttackManager : Character
         meleeAnimator = GetComponentInChildren<MeleeWeapon>().gameObject.GetComponent<Animator>();
     }
     */
-
 
     //Start method from the Character script; grabs all the references the script has and adds some; if you don't inherit from a parent Character script, delete or comment out this method and use Start instead
     protected override void Initializtion()
